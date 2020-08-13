@@ -7,14 +7,13 @@ function share_article(){
 		share_state.classList.remove("active");
 		share_state.classList.add("inactive");
 		share_text.style.display = "none";
-		return false
 	}
 	else{
 		share_state.classList.remove("inactive");
 		share_state.classList.add("active");
 		share_text.style.display = "block";
-		return true
 	}
+	return false
 }
 
 $("#share_article").on("click", share_article);
