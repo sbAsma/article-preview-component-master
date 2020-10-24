@@ -132,7 +132,8 @@ body {
 
 @media (min-width: 856px){
 	html, body{
-		margin-bottom: 50px;
+		/*margin-bottom: 50px;*/
+		/*height: 100%;*/
 	}
 	.article{
 		background-color: white; /*  Remained the same */
@@ -143,6 +144,7 @@ body {
 		border-radius: 10px;
 		width: 730px;
 		height: 280px;
+		/*max-height: 90%;*/ /*  Didn't work */
 		
 	}
 	div.article_image{
@@ -269,22 +271,32 @@ body {
 		border-radius: 15px;
 	}
 
-	footer.attribution{ 
+/*	div.attribution{ 
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	}
+	}*/
+}
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 20px;
+	/*padding-bottom: 10px;*/
+	background-color: hsl(217, 19%, 35%);
+	border-bottom: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
 }
 
-footer.attribution p{ 
+.panel-footer p{ 
 	padding-top: 10px;
 	font-size: 11px; 
 	text-align: center; 
-	height: 60px;
+	/*height: 60px;*/
 	color: white;
-	background-color: hsl(217, 19%, 35%);
+	
 }
-.attribution a { 
-	color: rgb(61, 143, 119); 
+.panel-footer a { 
+	color: rgb(47,104,87); 
 	background-color: hsl(212, 23%, 69%);
 }
