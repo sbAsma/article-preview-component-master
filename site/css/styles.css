@@ -10,160 +10,98 @@ body {
 		background-color: hsl(210, 46%, 95%);
 	}
 
-@media (max-width: 855px){
+.main_content{
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+.article_image img{
+	border-top-left-radius: 10px; /*  Remained the same */
+	border-bottom-left-radius: 10px;
+	object-fit: cover; 
+}
+div.text-content p{
+	opacity: 0.7;
+}
+div div.author-image img{
+	float: left;
+	width: 40px;
+	border-radius: 20px;
+	object-fit: cover;
+
+}
+.author-information{
+	float: left;
+	margin-top: 3px;
+	margin-left: 15px;
+	width: 120px;
 	
-	div.article_image{
-		width: 325px;
-		height: 200px;
-	}
-	.article_image img{
-		border-top-right-radius: 10px;
-		border-top-left-radius: 10px;
-		width: 325px;
-		height: 200px;
-	    object-fit: cover;
-	    object-position: 0 -15px; 
-	}
-
-	.article{
-		background-color: white;
-		margin-top: 75px;
-		margin-bottom: 100px;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius: 10px;
-		height: 510px;
-		width: 325px;
-	}
-	.text-content h1{
-		font-size: 1.2em;
-		margin-bottom: 20px;
-
-	}
-	div.text-content{
-		margin: 40px 45px 0px 25px;
-		line-height: 1.5;
-	}
-	div.text-content p{
-		font-size: 0.99em;
-		padding-bottom: 35px;
-		line-height: 1.5;
-		opacity: 0.7;
-	}
-	div div.author-image img{
-		float: left;
-		width: 40px;
-		border-radius: 20px;
-		object-fit: cover;
-
-	}
-	.author-information{
-		float: left;
-		margin-top: 3px;
-		margin-left: 15px;
-		
-	}
-	h1.name{
-		margin-bottom: 0px;
-		font-size: 0.9em;
-	}
-	.date{
-		color: hsl(212, 23%, 69%);
-	}
-	
-	div.active div.share-box{
-		
-		position: absolute;
-		float: left;
-		top: 522px;
-		left: 50%;
-    	transform: translate(-50%, 0);
-		width: 325px;
-		height: 63px;
-		background-color: hsl(217, 19%, 35%);
-		border-bottom-right-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}
-	div.share-box div{
-		margin-top: 20px;
-		margin-left: 25px;
-	}
-	div.share-box h2{
-		color: hsl(212, 23%, 69%);
-		letter-spacing: 5px;
-		font-weight: 300;
-	}
-	ul li, h2{
-		display: inline;	
-		float: left;
-		margin-left: 15px;
-		text-align: center;
-		/*opacity: .8;*/
-	}
-	div.share-box div{
-		display: none;
-	}
-	.share-button{
-		float: right;
-		position: relative;
-	}
-	.share-icon{
-		margin-top: 3px;
-		background-color: hsl(210, 46%, 95%);
-		background-image: url('../images/icon-share.svg');
-		background-repeat: no-repeat;
-		background-position: 8px 8px;
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
-	}
-	.active .share-icon{
-		margin-top: 3px;
-		background-color: hsl(212, 23%, 69%);
-		background-image: url('../images/icon-share-white.svg');
-		background-size: 20px;
-		background-repeat: no-repeat;
-		background-position: 6px 7px;
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
-	}
 }
 
+.date{
+	color: hsl(212, 23%, 69%);
+}
+div.active div.share-box{
+	position: absolute;
+	background-color: hsl(217, 19%, 35%);
+}
+
+ul li, h2{
+	display: inline;	
+	float: left;
+	margin-left: 15px;
+	text-align: center;
+}
+div.share-box h2{
+	margin-top: 0;
+	color: hsl(212, 23%, 69%);
+	letter-spacing: 5px;
+	font-size: 1.5em; /* The one to keep*/
+	font-weight: 300;
+}
+div.share-box div{
+	display: none;
+}
+.share-button{
+	float: right;
+	position: relative;
+}
+.share-icon{
+	margin-top: 3px;
+	background-color: hsl(210, 46%, 95%);
+	background-image: url('../images/icon-share.svg');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+}
+
+
 @media (min-width: 856px){
-	html, body{
-		/*margin-bottom: 50px;*/
-		/*height: 100%;*/
+
+	div.article_image{ 
+		float: left;
+		width: 285px;
+		height: 280px;
 	}
-	.article{
-		background-color: white; /*  Remained the same */
+	
+	.article_image img{ /* Updated */
+		width: 285px;
+		height: 280px;
+	    object-position: 0 0; /*  Remained the same */
+	}
+
+	.main_content{ /* Updated */
 		margin-top: 15%;
 		margin-bottom: 5%;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius: 10px;
 		width: 730px;
 		height: 280px;
 		/*max-height: 90%;*/ /*  Didn't work */
 		
 	}
-	div.article_image{
-		float: left;
-		width: 285px;
-		height: 280px;
-	}
-	.article_image img{
-		border-top-left-radius: 10px; /*  Remained the same */
-		border-bottom-left-radius: 10px;
-		width: 285px;
-		height: 280px;
-	    object-fit: cover; /*  Remained the same */
-	    object-position: 0 0; /*  Remained the same */
-	}
-
 	div.text-content{
 		float: left;
-		/*width: 440px;*/
 		margin-top: 40px;
 		margin-left: 40px;
 	}
@@ -175,46 +113,30 @@ body {
 		margin-bottom: 20px;
 
 	}
-	div.text-content p{
+	div.text-content p{ /* Updated */
 		padding-bottom: 20px;
 		line-height: 1.7;
 		font-size: 0.9em;
 		word-spacing: 2px;
-		opacity: 0.7;
 	}
 	div.author {
 		width: 352px;
 	}
-	div div.author-image img{
-		float: left;
-		width: 40px;
-		border-radius: 20px;
-		object-fit: cover;
-
-	}
-	.author-information{
-		float: left;
-		margin-top: 3px;
-		margin-left: 15px;
+	.author-information{ /* Updated */
 		width: 120px;
-		
 	}
 	div.author-information h1.name{
-		margin-top: 0px;
 		margin-bottom: 0px;
+		margin-top: 0px;
 		font-size: 99%;
 	}
-	.date{
-		color: hsl(212, 23%, 69%);
-	}
-	div.active div.share-box{
-		position: absolute;
+	div.active div.share-box{ /* Updated */
 		z-index: 10;
-   		transform: translate(16.3rem,-6rem);
+   		transform: translate(21rem,-9rem); /* translate(16.3rem,-6rem); */
 		width: 250px;
 		height: 55px;
-		background-color: hsl(217, 19%, 35%);
 		border-radius: 10px;
+		box-shadow: 0px 10px 29px 1px hsl(217, 19%, 35%);
 	}
 	div.active div.share-box:after{
 		content: '';
@@ -232,36 +154,13 @@ body {
 		margin-left: 22px;
 	}
 	div.share-box h2{
-		color: hsl(212, 23%, 69%);
-		letter-spacing: 5px;
-		font-weight: 300;
+		font-size: 1.5em; /* The one to keep*/
 	}
-	ul li, h2{
-		display: inline;	
-		float: left;
-		margin-left: 15px;
-		text-align: center;
-	}
-	div.share-box div{
-		display: none;
-	}
-	.share-button{
-		float: right;
-		position: relative;
-	}
-	.share-icon{
-		margin-top: 3px;
-		background-color: hsl(210, 46%, 95%);
-		background-image: url('../images/icon-share.svg');
-		background-repeat: no-repeat;
+	.share-icon{ /* Updated */
 		background-position: center;
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
 	}
 	.active .share-icon{
 		margin-top: 3px;
-		background-color: hsl(217, 19%, 35%);
 		background-image: url('../images/icon-share-white.svg');
 		background-size: 20px;
 		background-repeat: no-repeat;
@@ -270,31 +169,94 @@ body {
 		height: 30px;
 		border-radius: 15px;
 	}
-
-/*	div.attribution{ 
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	}*/
+	.active .share-icon{
+		background-color: hsl(217, 19%, 35%);
+	}
 }
+@media (max-width: 855px){
+	
+	div.article_image{ 
+		width: 325px;
+		height: 200px;
+	}
+	.article_image img{ /* Updated */
+		width: 325px;
+		height: 200px;
+	    object-position: 0 -15px; 
+	}
+
+	.main_content{ /* Updated */
+		margin-top: 75px;
+		margin-bottom: 100px;
+		height: 510px;
+		width: 325px;
+	}
+	.text-content h1{
+		font-size: 1.2em;
+		margin-bottom: 20px;
+
+	}
+	div.text-content{
+		margin: 40px 45px 0px 25px;
+		line-height: 1.5;
+	}
+	div.text-content p{ /* Updated */
+		font-size: 0.99em;
+		padding-bottom: 35px;
+		line-height: 1.5;
+	}
+	h1.name{ 
+		margin-top: 3px;
+		margin-bottom: 0px;
+		font-size: 0.9em;
+	}
+	div.active div.share-box{ /* Updated */
+		float: left;
+		top: 522px;
+		left: 50%;
+    	transform: translate(-50%, 0);
+		width: 325px;
+		height: 63px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	div.share-box h2{
+	    margin-bottom: 5px;
+	    margin-top: 5px;
+	    margin-left: 0px;
+		font-size: 1em; /* The one to keep*/
+	}
+	.share-button{
+
+		margin-top: 8px;
+	}
+	div.share-box div{
+		margin-top: 20px;
+		margin-left: 25px;
+	}
+	.share-icon{ /* Updated */
+		background-position: 8px 8px;
+	}
+	.active .share-icon{
+		background-color: hsl(212, 23%, 69%);
+	}
+}
+
 .panel-footer {
 	margin-top: 30px;
 	padding-top: 20px;
-	/*padding-bottom: 10px;*/
 	background-color: hsl(217, 19%, 35%);
 	border-bottom: 0;
 }
 .panel-footer div.row {
-  margin-bottom: 35px;
+ 	margin-bottom: 35px;
 }
 
 .panel-footer p{ 
 	padding-top: 10px;
 	font-size: 11px; 
 	text-align: center; 
-	/*height: 60px;*/
 	color: white;
-	
 }
 .panel-footer a { 
 	color: rgb(47,104,87); 
